@@ -6,17 +6,28 @@ $blue: #5584b1
 .row
   margin: 0 !important
 
+// Pop-up styles
+
+.modal-open
+  overflow-y: scroll !important
+
+.modal-dialog
+  margin: 250px auto !important
+
+.modal-content
+  border-radius: 0 !important
+
 .header-menu
   background-color: #fff
-  height: 80px
+  height: 100px
 
   .pro-logo
     font-size: 2.5rem
     color: #3b83bd !important
 
   .nav-item
-    float: right
     font-size: 1.5rem
+    font-weight: 300
     line-height: 80px
 
   .blue-btn
@@ -34,24 +45,26 @@ $blue: #5584b1
 
     &:hover
       border: 2px solid $blue
-      background: #f4f4f4
+      background: #ebf7fd
+      font-weight: 400
       color: $blue
 
 .main-bg
-  margin-top: 80px
+  margin-top: 100px
   width: 100%
-  height: 800px
-  background: url(img/main-bg.jpg) no-repeat top center
+  height: 1100px
+  background: url(img/main-bg-4.jpg) no-repeat top center
 
   h1
-    margin-top: 250px
+    margin-top: 200px
+    margin-bottom: 100px
     text-transform: uppercase
     font-size: 3rem
     font-weight: 700
 
-  .blue-btn
+  .big-blue-btn
     margin-top: 15px
-    height: 50px
+    height: 70px
     background: $blue
     border-radius: 0
     font-family: $font
@@ -64,21 +77,35 @@ $blue: #5584b1
 
     &:hover
       border: 2px solid $blue
-      background: #f4f4f4
+      background: #ebf7fd
+      font-weight: 400
       color: $blue
 
-.info-bg
-  background-color: #f4f4f4
+  .pro-badge
+    margin-top: 370px
+    display: flex
+
+    .bold-digit
+      font-size: 6rem
+      color: $blue
+
+    .pro-badge-text
+      font-size: 1rem
+      margin-top: 40px
+
+
+/*.info-bg
+  background-color: transparent
   width: 100%
   height: 200px
 
-  .info-text
+  /*.info-text
     font-size: 1.5rem
     text-align: center
 
 .why-filtration
   width: 100%
-  height: 800px
+  height: 700px
 
   h2
     margin-top: 50px
@@ -98,10 +125,10 @@ $blue: #5584b1
     margin-top: 100px
     float: left
     width: 20%
-    height: 200px
+    height: 100px
 
     .icon-header
-      margin-top: 200px
+      margin-top: 160px
       width: 100%
       font-size: 1rem
       font-weight: 400
@@ -118,24 +145,24 @@ $blue: #5584b1
       color: $dark-text
 
     &:nth-child(3)
-      background: url(img/biohazard.png) no-repeat top center
+      background: url(img/biohazard-min.png) no-repeat top center
 
     &:nth-child(4)
-      background: url(img/toxic.png) no-repeat top center
+      background: url(img/toxic-min.png) no-repeat top center
 
     &:nth-child(5)
-      background: url(img/bacteria.png) no-repeat top center
+      background: url(img/bacteria-min.png) no-repeat top center
 
     &:nth-child(6)
-      background: url(img/magnet.png) no-repeat top center
+      background: url(img/magnet-min.png) no-repeat top center
 
     &:last-child
-      background: url(img/water.png) no-repeat top center
+      background: url(img/water-min.png) no-repeat top center
 
 .solution
-  background-color: #f4f4f4
+  background-color: #ebf7fd
   width: 100%
-  height: 800px
+  height: 1050px
 
   h2
     margin-top: 50px
@@ -146,7 +173,6 @@ $blue: #5584b1
     text-align: center
 
   .blue-btn
-    margin-top: 50px
     height: 60px
     background: $blue
     border-radius: 0
@@ -157,14 +183,16 @@ $blue: #5584b1
     text-transform: uppercase
     cursor: pointer
     transition: all .5s ease
+    outline: none
 
     &:hover
       border: 2px solid $blue
-      background: #f4f4f4
+      background: #ebf7fd
+      font-weight: 400
       color: $blue
 
   .solution-tabs
-    margin-bottom: 100px
+    margin-bottom: 70px
     margin-top: 50px
     height: auto
 
@@ -190,7 +218,7 @@ $blue: #5584b1
 
   .solution-tabs input:checked + label
     border: 2px solid $blue
-    background: #f4f4f4
+    background: #ebf7fd
     color: $blue
 
   #tab-1:checked ~ .solution-tab-slides .apartment-solution
@@ -210,14 +238,43 @@ $blue: #5584b1
     width: 100%
     box-sizing: border-box
 
-  .apartment-solution, .cottage-solution, .restaurant-solution, .manufacture-solution
-    display: none
-    top: 0
-    left: 0
-    width: 100%
+    .apartment-solution,
+    .cottage-solution,
+    .restaurant-solution,
+    .manufacture-solution
+      display: none
+      margin-top: 30px
+      top: 0
+      left: 0
+      width: 100%
+
+      .solution-header
+        font-size: 1.5rem
+        font-weight: 300
+        text-align: center
+        color: $dark-text
+
+      img
+        margin: 0 auto
+        display: flex
+
+      .solution-text
+        margin-top: 30px
+        padding-left: 21px
+        width: 100%
+        height: 100px
+        font-size: .7rem
+        font-weight: 300
+        color: $dark-text
+
+      .pirce-tag
+        margin-top: 20px
+        padding-left: 31px
+        font-size: 1.5rem
+        font-weight: 300
 
 .completed-works
-  background-color: #f4f4f4
+  background-color: #ebf7fd
   width: 100%
   height: 1100px
 
@@ -256,7 +313,7 @@ $blue: #5584b1
 
   .completed-tabs input:checked + label
     border: 2px solid $blue
-    background: #f4f4f4
+    background: #ebf7fd
     color: $blue
 
   #tab-5:checked ~ .completed-tab-slides .apartment-completed
@@ -325,6 +382,7 @@ $blue: #5584b1
     &:hover
       border: 2px solid $blue
       background: #fff
+      font-weight: 400
       color: $blue
 
 .checking, .assembling, .service
@@ -360,6 +418,7 @@ $blue: #5584b1
     &:hover
       border: 2px solid #fff
       background: $blue
+      font-weight: 400
       color: #fff
 
 .water-test
@@ -367,6 +426,11 @@ $blue: #5584b1
     width: 48vw
     height: 600px
     background: url(img/water-test.jpg) no-repeat center
+
+.checking
+  .pic-bg
+    img
+      margin-left: -500px
 
 .equipment
   .pic-bg
@@ -377,9 +441,7 @@ $blue: #5584b1
 .assembling
   .pic-bg
     img
-      margin-top: 88px
-      margin-left: -280px
-      width: 150%
+      margin-left: -500px
 
 .service
   .pic-bg
@@ -398,35 +460,51 @@ $blue: #5584b1
   width: 100%
   height: 700px
 
-.ask
+.credits
   position: absolute
+  top: -550px
+  width: 100%
+  height: 500px
 
-  .input
-    height: 60px
-    border-radius: 0
-    border: 2px solid $blue
-    outline: none
+  .contacts
+    height: 150px
+    background-color: #fff
 
-  .textarea
-    border-radius: 0
-    border: 2px solid $blue
-    outline: none
+  .ask
+    position: absolute
 
-  .blue-btn
-    margin-top: 40px
-    height: 60px
-    background: $blue
-    border-radius: 0
-    font-family: $font
-    font-size: 1.5rem
-    font-weight: 300
-    color: #fff
-    text-transform: uppercase
-    cursor: pointer
-    transition: all .5s ease
-    outline: none
-
-    &:hover
+    .input
+      height: 60px
+      border-radius: 0
       border: 2px solid $blue
-      background: #fff
-      color: $blue
+      outline: none
+
+    .textarea
+      border-radius: 0
+      border: 2px solid $blue
+      outline: none
+
+    .blue-btn
+      margin-top: 40px
+      height: 60px
+      background: $blue
+      border-radius: 0
+      font-family: $font
+      font-size: 1.5rem
+      font-weight: 300
+      color: #fff
+      text-transform: uppercase
+      cursor: pointer
+      transition: all .5s ease
+      outline: none
+
+      &:hover
+        border: 2px solid $blue
+        background: #fff
+        font-weight: 400
+        color: $blue
+
+.footer
+  width: 100%
+  height: 200px
+  background-color: #f4f4f4
