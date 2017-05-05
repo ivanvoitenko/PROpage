@@ -1,731 +1,693 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <!--[if IE]>
+
+<head>
+  <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <![endif]-->
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 
-    <title>FILTERPRO | профессиональная очистка воды</title>
+  <title>FILTERPRO | профессиональная очистка воды</title>
 
-    <!-- Icons -->
-    <!--[if IE]>
+  <!-- Icons -->
+  <!--[if IE]>
     <link rel="icon" href="img/ico/favicon.ico"><![endif]-->
-    <link rel="shortcut icon" href="css/img/ico/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="css/img/ico/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="css/img/ico/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="css/img/ico/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="css/img/ico/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="css/img/ico/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="css/img/ico/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="css/img/ico/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="css/img/ico/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="css/img/ico/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="css/img/ico/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="css/img/ico/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="css/img/ico/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="css/img/ico/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="css/img/ico/favicon-16x16.png">
-    <link rel="manifest" href="css/img/ico/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="css/img/ico/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="shortcut icon" href="css/img/ico/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="css/img/ico/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="css/img/ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="css/img/ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="css/img/ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="css/img/ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="css/img/ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="css/img/ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="css/img/ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="css/img/ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="css/img/ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="css/img/ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="css/img/ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="css/img/ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="css/img/ico/favicon-16x16.png">
+  <link rel="manifest" href="css/img/ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="css/img/ico/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-    <!-- Opengraf -->
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="">
+  <!-- Opengraf -->
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="">
 
-    <!-- Twitter social metas-->
-    <meta name="twitter:card" content="">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
-    <meta name="twitter:url" content="">
-  </head>
-  <body>
+  <!-- Twitter social metas-->
+  <meta name="twitter:card" content="">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:url" content="">
+</head>
 
-    <nav class="navbar fixed-top navbar-toggleable-md navbar-light justify-content-end header-menu">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<body>
+
+  <nav class="navbar fixed-top navbar-toggleable-md navbar-light justify-content-end header-menu">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand pro-logo" href="#">FILTER <strong>PRO</strong></a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">О нас</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Решения</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Услуги</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Гарантии</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
+      <a class="navbar-brand pro-logo" data-scroll href="#">FILTER <strong>PRO</strong></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" data-scroll href="#about">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll href="#solution">Решения</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll href="#services">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll href="#completed-works">Наши работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-scroll href="#credits">Контакты</a>
+          </li>
 
-            <!-- CallBack Pop-Up -->
-            <li class="nav-item">
-              <button type="button" class="btn blue-btn" data-toggle="modal" data-target="#callback">
+          <!-- CallBack Pop-Up -->
+          <li class="nav-item">
+            <button type="button" class="btn blue-btn" data-toggle="modal" data-target="#callback">
                 Заказать звонок
               </button>
-            </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="container-full">
-      <div class="row">
-        <div class="main-bg">
-          <div class="container">
-            <h1>решения очистки воды под ключ</h1>
-            <div class="row">
-              <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#callback">
+  <div class="container-full">
+    <div class="row">
+      <div class="main-bg">
+        <div class="container">
+          <h1>решения очистки воды под ключ</h1>
+          <div class="row">
+            <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#callback">
                 рассчитать стоимость
               </button>
-            </div>
-            <div class="row">
-              <!-- CallBack Pop-Up -->
-              <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#callback">
+          </div>
+          <div class="row">
+            <!-- CallBack Pop-Up -->
+            <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#callback">
                 получить консультацию
               </button>
+          </div>
+          <div class="row">
+            <div class="pro-badge col-3 offset-1">
+              <span class="bold-digit col-3">8</span>
+              <div class="pro-badge-text col-9">лет профессионального опыта</div>
             </div>
-            <div class="row">
-              <div class="pro-badge col-3 offset-1">
-                <span class="bold-digit col-3">8</span>
-                <div class="pro-badge-text col-9">лет профессионального опыта</div>
+            <div class="pro-badge col-4">
+              <span class="bold-digit col-4">29</span>
+              <div class="pro-badge-text col-8">сертифицированных инженеров и консультантов в штате</div>
+            </div>
+            <div class="pro-badge col-4">
+              <span class="bold-digit col-8">3500</span>
+              <div class="pro-badge-text col-4">успешных завершенных проектов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div id="about"></div>
+      <div class="about">
+        <h2>зачем очищать воду?</h2>
+        <p class="filtration-text">
+          Даже в самой чистой родниковой воде могут содержаться как химические так и органические примеси. В нашей стране имели место быть техногенные катастрофы, последствия индустриализации, расцвет тяжелой промышленности и металлургии также оставили след в почве.
+          В результате вода, которая подается в наш дом, непригодная для использования в быту и даже может навредить нашему здоровью.
+        </p>
+        <div class="filtration-icon">
+          <div class="icon-header">зараженная<br>почва</div>
+          <div class="icon-explain">
+            - снижение иммунитета<br> - раковые заболевания<br> - тяжелые отравления
+          </div>
+        </div>
+        <div class="filtration-icon">
+          <div class="icon-header">остатки солей<br>тяжелых металлов</div>
+          <div class="icon-explain">
+            - попадание в организм токсинов<br> - накопление тяжелых металлов в организме<br> - нарушение работы нервной системы
+          </div>
+        </div>
+        <div class="filtration-icon">
+          <div class="icon-header">органические<br>примеси</div>
+          <div class="icon-explain">
+            - слизь в трубах<br> - кишечные расстройства<br> - неприятный цвет и запах воды
+          </div>
+        </div>
+        <div class="filtration-icon">
+          <div class="icon-header">избыток<br>железа</div>
+          <div class="icon-explain">
+            - желтые потеки<br> - непригодность воды для питья<br> - ржавчина на сантехнике
+          </div>
+        </div>
+        <div class="filtration-icon">
+          <div class="icon-header">чрезмерное количество<br>солей жесткости</div>
+          <div class="icon-explain">
+            - снижение иммунитета<br> - раковые заболевания<br> - тяжелые отравления
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div class="row">
+      <div id="solution"></div>
+      <div class="solution">
+        <div class="container">
+          <h2>решения очистки воды</h2>
+          <div class="solution-tabs">
+            <input type="radio" id="tab-1" name="toggle-1" checked>
+            <label class="col-3" for="tab-1">квартира</label>
+            <input type="radio" id="tab-2" name="toggle-1">
+            <label class="col-3" for="tab-2">коттедж</label>
+            <input type="radio" id="tab-3" name="toggle-1">
+            <label class="col-3" for="tab-3">ресторан</label>
+            <input type="radio" id="tab-4" name="toggle-1">
+            <label class="col-3" for="tab-4">производство</label>
+            <div class="solution-tab-slides">
+              <div class="apartment-solution">
+                <div class="row">
+                  <div class="mechanic col-4">
+                    <p class="solution-header">
+                      Механические фильтры для очистки бытовой воды
+                    </p>
+                    <img src="css/img/mechanic.png" alt="механический фильтр">
+                    <p class="solution-text">
+                      - Устанавливаются на входе воды в квартиру<br> - Базовая очистка от песка, ила и ржавчины<br> - Защищают технику от попадания взвешенных частиц
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 300 грн
+                    </div>
+                  </div>
+                  <div class="osmosis col-4">
+                    <p class="solution-header">
+                      Фильтры обратного осмоса для очистки питьевой воды
+                    </p>
+                    <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
+                    <p class="solution-text">
+                      - Устанавливается на кухне с отдельным краном для чистой воды<br> - Удаляют бактерии и вирусы, пропуская только молекулы воды<br> - Избавляет от накипи в чайнике и и налете на посуде
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 2899 грн
+                    </div>
+                  </div>
+                  <div class="cabinet col-4">
+                    <p class="solution-header">
+                      Фильтры для комплексной очистки бытовой воды
+                    </p>
+                    <img src="css/img/cabinet.png" alt="фильтр комплексной очистки воды">
+                    <p class="solution-text">
+                      - Избавляют от образования белого и желтого налета<br> - Убирают неприятный запах<br> - Уберегают нагревательные элементы в бытовой технике<br> - Уменьшают расход моющих средств<br> - Экономят расход электроэнергии<br> - Избавляют
+                      от проблем жестких волос и сухой кожи
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 1299 грн
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="pro-badge col-4">
-                <span class="bold-digit col-4">29</span>
-                <div class="pro-badge-text col-8">сертифицированных инженеров и консультантов в штате</div>
+              <div class="cottage-solution">
+                <div class="row">
+                  <div class="mechanic col-4">
+                    <p class="solution-header">
+                      Механические фильтры для очистки бытовой воды
+                    </p>
+                    <img src="css/img/mechanic.png" alt="механический фильтр">
+                    <p class="solution-text">
+                      - Устанавливаются на входе воды в квартиру<br> - Базовая очистка от песка, ила и ржавчины<br> - Защищают технику от попадания взвешенных частиц
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 300 грн
+                    </div>
+                  </div>
+                  <div class="osmosis col-4">
+                    <p class="solution-header">
+                      Фильтры обратного осмоса для очистки питьевой воды
+                    </p>
+                    <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
+                    <p class="solution-text">
+                      - Устанавливается на кухне с отдельным краном для чистой воды<br> - Удаляют бактерии и вирусы, пропуская только молекулы воды<br> - Избавляет от накипи в чайнике и и налете на посуде
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 2899 грн
+                    </div>
+                  </div>
+                  <div class="cabinet col-4">
+                    <p class="solution-header">
+                      Фильтры для комплексной очистки бытовой воды
+                    </p>
+                    <img src="css/img/column.png" alt="фильтр комплексной очистки воды">
+                    <p class="solution-text">
+                      - Избавляют от образования белого и желтого налета<br> - Убирают неприятный запах<br> - Уберегают нагревательные элементы в бытовой технике<br> - Уменьшают расход моющих средств<br> - Экономят расход электроэнергии<br> - Избавляют
+                      от проблем жестких волос и сухой кожи
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 1299 грн
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="pro-badge col-4">
-                <span class="bold-digit col-8">3500</span>
-                <div class="pro-badge-text col-4">успешных завершенных проектов</div>
+              <div class="restaurant-solution">
+                <div class="row">
+                  <div class="mechanic col-4">
+                    <p class="solution-header">
+                      Механические фильтры для очистки бытовой воды
+                    </p>
+                    <img src="css/img/mechanic.png" alt="механический фильтр">
+                    <p class="solution-text">
+                      - Устанавливаются на входе воды в квартиру<br> - Базовая очистка от песка, ила и ржавчины<br> - Защищают технику от попадания взвешенных частиц
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 300 грн
+                    </div>
+                  </div>
+                  <div class="osmosis col-4">
+                    <p class="solution-header">
+                      Фильтры обратного осмоса для очистки питьевой воды
+                    </p>
+                    <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
+                    <p class="solution-text">
+                      - Устанавливается на кухне с отдельным краном для чистой воды<br> - Удаляют бактерии и вирусы, пропуская только молекулы воды<br> - Избавляет от накипи в чайнике и и налете на посуде
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 2899 грн
+                    </div>
+                  </div>
+                  <div class="cabinet col-4">
+                    <p class="solution-header">
+                      Фильтры для комплексной очистки бытовой воды
+                    </p>
+                    <img src="css/img/cabinet.png" alt="фильтр комплексной очистки воды">
+                    <p class="solution-text">
+                      - Избавляют от образования белого и желтого налета<br> - Убирают неприятный запах<br> - Уберегают нагревательные элементы в бытовой технике<br> - Уменьшают расход моющих средств<br> - Экономят расход электроэнергии<br> - Избавляют
+                      от проблем жестких волос и сухой кожи
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 1299 грн
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="manufacture-solution">
+                <div class="row">
+                  <div class="mechanic col-4">
+                    <p class="solution-header">
+                      Механические фильтры для очистки бытовой воды
+                    </p>
+                    <img src="css/img/mechanic.png" alt="механический фильтр">
+                    <p class="solution-text">
+                      - Устанавливаются на входе воды в квартиру<br> - Базовая очистка от песка, ила и ржавчины<br> - Защищают технику от попадания взвешенных частиц
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 300 грн
+                    </div>
+                  </div>
+                  <div class="osmosis col-4">
+                    <p class="solution-header">
+                      Фильтры обратного осмоса для очистки питьевой воды
+                    </p>
+                    <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
+                    <p class="solution-text">
+                      - Устанавливается на кухне с отдельным краном для чистой воды<br> - Удаляют бактерии и вирусы, пропуская только молекулы воды<br> - Избавляет от накипи в чайнике и и налете на посуде
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 2899 грн
+                    </div>
+                  </div>
+                  <div class="cabinet col-4">
+                    <p class="solution-header">
+                      Фильтры для комплексной очистки бытовой воды
+                    </p>
+                    <img src="css/img/column.png" alt="фильтр комплексной очистки воды">
+                    <p class="solution-text">
+                      - Избавляют от образования белого и желтого налета<br> - Убирают неприятный запах<br> - Уберегают нагревательные элементы в бытовой технике<br> - Уменьшают расход моющих средств<br> - Экономят расход электроэнергии<br> - Избавляют
+                      от проблем жестких волос и сухой кожи
+                    </p>
+                    <div class="pirce-tag">
+                      цена от 1299 грн
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CallBack Pop-Up -->
+          <button type="button" class="btn blue-btn offset-3 col-6" data-toggle="modal" data-target="#callback">
+              заказать консультацию
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div id="services">
+      <div class=""></div>
+      <div class="water-test">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2>химический анализ воды</h2>
+              <p>Всё начинается с анализа воды. Чтобы составить рекомендации, нужно понять причины плохой воды.</p>
+
+              <!-- CallBack Pop-Up -->
+              <button type="button" class="btn blue-btn col-7" data-toggle="modal" data-target="#callback">
+                  заказать анализ
+                </button>
+            </div>
+            <div class="col-6">
+              <div class="pic-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div class="row">
+      <div class="checking">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="pic-bg">
+                <img src="css/img/install.jpg" alt="выезд инженера на место эксплуатации">
+              </div>
+            </div>
+            <div class="col-6">
+              <h2>выезд инженера на место эксплуатации</h2>
+              <p>Чтобы понимать условия эксплуатации и места установки оборудования в каждом частном случае выезжает наш специалист.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div class="row">
+      <div class="equipment">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2>подбор оборудования</h2>
+              <p>В зависимости от анализа воды потребуется то или иное оборудование.</p>
+
+              <!-- CallBack Pop-Up -->
+              <button type="button" class="btn blue-btn col-10" data-toggle="modal" data-target="#callback">
+                  заказать консультацию
+                </button>
+            </div>
+            <div class="col-6">
+              <div class="pic-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div class="row">
+      <div class="assembling">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="pic-bg">
+                <img src="css/img/assembling.jpg" alt="установка и монтаж оборудования">
+              </div>
+            </div>
+            <div class="col-6">
+              <h2>установка и монтаж оборудования</h2>
+              <p>от качества монтажных работ зависит надежность всей системы. Мы справляемся с этим за 2 дня.</p>
+
+              <!-- CallBack Pop-Up -->
+              <button type="button" class="btn white-btn col-10" data-toggle="modal" data-target="#callback">
+                  заказать консультацию
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div class="row">
+      <div id="completed-works"></div>
+      <div class="completed-works">
+        <div class="container">
+          <h2>примеры выполненых работ</h2>
+          <div class="completed-tabs">
+            <input type="radio" id="tab-5" name="toggle-2" checked>
+            <label class="col-3" for="tab-5">квартира</label>
+            <input type="radio" id="tab-6" name="toggle-2">
+            <label class="col-3" for="tab-6">коттедж</label>
+            <input type="radio" id="tab-7" name="toggle-2">
+            <label class="col-3" for="tab-7">ресторан</label>
+            <input type="radio" id="tab-8" name="toggle-2">
+            <label class="col-3" for="tab-8">производство</label>
+            <div class="completed-tab-slides">
+              <div class="apartment-completed">
+                <p>
+                  Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br> Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
+                </p>
+                <img src="css/img/manufacture-completed-1.jpg" alt="Kyiv">
+              </div>
+              <div class="cottage-completed">
+                <p>
+                  Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br> Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
+                </p>
+                <img src="css/img/manufacture-completed-1.jpg" alt="Lviv">
+              </div>
+              <div class="restaurant-completed">
+                <p>
+                  Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br> Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
+                </p>
+                <img src="css/img/manufacture-completed-1.jpg" alt="Lutsk">
+              </div>
+              <div class="manufacture-completed">
+                <p>
+                  Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br> Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
+                </p>
+                <img src="css/img/manufacture-completed-1.jpg" alt="Krakow">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!--<div class="container-full">
-      <div class="row">
-        <div class="info-bg">
-          <div class="container">
-            <p class="info-text">
-              <strong>8 лет профессионального опыта работы</strong>
-              <br><strong>Более 30 сертифицированных инсталляторов, инженеров и консультантов в штате</strong>
-              <br><strong>Более 3 500 успешных проектов</strong>
+  <div class="container-full">
+    <div class="row">
+      <div class="service">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h2>сервисное обслуживание</h2>
+              <p>Выезжаем 2 раза в год, доставляем расходные материалы, заменяем фильтрующую загрузку, проводим диагностику.</p>
+              <a href="javascript:showhide('serviceInDetails')">
+                <button type="button" class="btn white-btn col-8">
+                      узнать подробнее
+                  </button>
+              </a>
+            </div>
+            <div class="col-6">
+              <div class="pic-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col-12">
+          <div id="serviceInDetails">
+            <p>Content goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div class="row">
+      <div id="credits"></div>
+      <div id="map"></div>
+      <div class="container">
+        <div class="row">
+          <div class="credits">
+            <div class="row">
+              <div class="col-5">
+                <div class="contacts">
+                  <div class="row">
+                    <div class="col-5">
+                      тел.:  <a href="tel:+38 (044) 111 22 33">(044) 111 22 33</a>
+                      <br>тел.:  <a href="tel:+38 (067) 444 55 66">(067) 444 55 66</a>
+                      <a href="mailto:info@filterpro.com.ua">info@filterpro.com.ua</a>
+                    </div>
+                    <div class="col-6 offset-1">
+                      <p>
+                        Киев ул. Кириловская, 71
+                        <br><br><a class="navbar-brand" href="#">FILTER <strong>PRO</strong></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 offset-2">
+                <div class="ask">
+                  <div class="form-group row">
+                    <label for="clients-name" class="col-2 col-form-label"></label>
+                    <input class="form-control input" type="text" placeholder="Имя" id="clients-name">
+                  </div>
+                  <div class="form-group row">
+                    <label for="clients-tel" class="col-2 col-form-label"></label>
+                    <input class="form-control input" type="tel" placeholder="Телефон" id="clients-tel">
+                  </div>
+                  <div class="form-group row">
+                    <label for="clients-email" class="col-2 col-form-label"></label>
+                    <input class="form-control input" type="email" placeholder="E-mail" id="clients-email">
+                  </div>
+                  <div class="form-group row">
+                    <label for="client-message" class="col-2 col-form-label"></label>
+                    <textarea class="form-control textarea" placeholder="Задайте вопрос" id="clients-message" rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="btn blue-btn col-12">заказать бесплатную консультацию</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full">
+    <div class="row">
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <p class="copyright col-12">
+              © 2009&dash;2017, FLTER<b>PRO</b>, Все права защищены
+            </p>
+          </div>
+          <div class="row">
+            <p class="made-by col-12">
+            Сделано с <i></i> в Киеве
             </p>
           </div>
         </div>
       </div>
-    </div>-->
-
-    <div class="container">
-      <div class="row">
-        <div class="why-filtration">
-          <h2>зачем очищать воду?</h2>
-          <p class="filtration-text">
-            Даже в самой чистой родниковой воде могут содержаться как химические так и органические примеси.
-            В нашей стране имели место быть техногенные катастрофы, последствия индустриализации, расцвет тяжелой промышленности и металлургии также оставили след в почве.
-            В результате вода, которая подается в наш дом, непригодная для использования в быту и даже может навредить нашему здоровью.
-          </p>
-          <div class="filtration-icon">
-            <div class="icon-header">зараженная<br>почва</div>
-            <div class="icon-explain">
-              - снижение иммунитета<br>
-              - раковые заболевания<br>
-              - тяжелые отравления
-            </div>
-          </div>
-          <div class="filtration-icon">
-            <div class="icon-header">остатки солей<br>тяжелых металлов</div>
-            <div class="icon-explain">
-              - попадание в организм токсинов<br>
-              - накопление тяжелых металлов в организме<br>
-              - нарушение работы нервной системы
-            </div>
-          </div>
-          <div class="filtration-icon">
-            <div class="icon-header">органические<br>примеси</div>
-            <div class="icon-explain">
-              - слизь в трубах<br>
-              - кишечные расстройства<br>
-              - неприятный цвет и запах воды
-            </div>
-          </div>
-          <div class="filtration-icon">
-            <div class="icon-header">избыток<br>железа</div>
-            <div class="icon-explain">
-              - желтые потеки<br>
-              - непригодность воды для питья<br>
-              - ржавчина на сантехнике
-            </div>
-          </div>
-          <div class="filtration-icon">
-            <div class="icon-header">чрезмерное количество<br>солей жесткости</div>
-            <div class="icon-explain">
-              - снижение иммунитета<br>
-              - раковые заболевания<br>
-              - тяжелые отравления
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
 
-    <div class="container-full">
-      <div class="row">
-        <div class="solution">
-          <div class="container">
-            <h2>решения очистки воды</h2>
-            <div class="solution-tabs">
-              <input type="radio" id="tab-1" name="toggle-1" checked>
-              <label class="col-3" for="tab-1">квартира</label>
-              <input type="radio" id="tab-2" name="toggle-1">
-              <label class="col-3" for="tab-2">коттедж</label>
-              <input type="radio" id="tab-3" name="toggle-1">
-              <label class="col-3" for="tab-3">ресторан</label>
-              <input type="radio" id="tab-4" name="toggle-1">
-              <label class="col-3" for="tab-4">производство</label>
-              <div class="solution-tab-slides">
-                <div class="apartment-solution">
-                  <div class="row">
-                    <div class="mechanic col-4">
-                      <p class="solution-header">
-                        Механические фильтры для очистки бытовой воды
-                      </p>
-                      <img src="css/img/mechanic.png" alt="механический фильтр">
-                      <p class="solution-text">
-                        - Устанавливаются на входе воды в квартиру<br>
-                        - Базовая очистка от песка, ила и ржавчины<br>
-                        - Защищают технику от попадания взвешенных частиц
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 300 грн
-                      </div>
-                    </div>
-                    <div class="osmosis col-4">
-                      <p class="solution-header">
-                        Фильтры обратного осмоса для очистки питьевой воды
-                      </p>
-                      <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
-                      <p class="solution-text">
-                        - Устанавливается на кухне с отдельным краном для чистой воды<br>
-                        - Удаляют бактерии и вирусы, пропуская только молекулы воды<br>
-                        - Избавляет от накипи в чайнике и и налете на посуде
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 2899 грн
-                      </div>
-                    </div>
-                    <div class="cabinet col-4">
-                      <p class="solution-header">
-                        Фильтры для комплексной очистки бытовой воды
-                      </p>
-                      <img src="css/img/cabinet.png" alt="фильтр комплексной очистки воды">
-                      <p class="solution-text">
-                        - Избавляют от образования белого и желтого налета<br>
-                        - Убирают неприятный запах<br>
-                        - Уберегают нагревательные элементы в бытовой технике<br>
-                        - Уменьшают расход моющих средств<br>
-                        - Экономят расход электроэнергии<br>
-                        - Избавляют от проблем жестких волос и сухой кожи
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 1299 грн
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="cottage-solution">
-                  <div class="row">
-                    <div class="mechanic col-4">
-                      <p class="solution-header">
-                        Механические фильтры для очистки бытовой воды
-                      </p>
-                      <img src="css/img/mechanic.png" alt="механический фильтр">
-                      <p class="solution-text">
-                        - Устанавливаются на входе воды в квартиру<br>
-                        - Базовая очистка от песка, ила и ржавчины<br>
-                        - Защищают технику от попадания взвешенных частиц
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 300 грн
-                      </div>
-                    </div>
-                    <div class="osmosis col-4">
-                      <p class="solution-header">
-                        Фильтры обратного осмоса для очистки питьевой воды
-                      </p>
-                      <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
-                      <p class="solution-text">
-                        - Устанавливается на кухне с отдельным краном для чистой воды<br>
-                        - Удаляют бактерии и вирусы, пропуская только молекулы воды<br>
-                        - Избавляет от накипи в чайнике и и налете на посуде
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 2899 грн
-                      </div>
-                    </div>
-                    <div class="cabinet col-4">
-                      <p class="solution-header">
-                        Фильтры для комплексной очистки бытовой воды
-                      </p>
-                      <img src="css/img/column.png" alt="фильтр комплексной очистки воды">
-                      <p class="solution-text">
-                        - Избавляют от образования белого и желтого налета<br>
-                        - Убирают неприятный запах<br>
-                        - Уберегают нагревательные элементы в бытовой технике<br>
-                        - Уменьшают расход моющих средств<br>
-                        - Экономят расход электроэнергии<br>
-                        - Избавляют от проблем жестких волос и сухой кожи
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 1299 грн
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="restaurant-solution">
-                  <div class="row">
-                    <div class="mechanic col-4">
-                      <p class="solution-header">
-                        Механические фильтры для очистки бытовой воды
-                      </p>
-                      <img src="css/img/mechanic.png" alt="механический фильтр">
-                      <p class="solution-text">
-                        - Устанавливаются на входе воды в квартиру<br>
-                        - Базовая очистка от песка, ила и ржавчины<br>
-                        - Защищают технику от попадания взвешенных частиц
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 300 грн
-                      </div>
-                    </div>
-                    <div class="osmosis col-4">
-                      <p class="solution-header">
-                        Фильтры обратного осмоса для очистки питьевой воды
-                      </p>
-                      <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
-                      <p class="solution-text">
-                        - Устанавливается на кухне с отдельным краном для чистой воды<br>
-                        - Удаляют бактерии и вирусы, пропуская только молекулы воды<br>
-                        - Избавляет от накипи в чайнике и и налете на посуде
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 2899 грн
-                      </div>
-                    </div>
-                    <div class="cabinet col-4">
-                      <p class="solution-header">
-                        Фильтры для комплексной очистки бытовой воды
-                      </p>
-                      <img src="css/img/cabinet.png" alt="фильтр комплексной очистки воды">
-                      <p class="solution-text">
-                        - Избавляют от образования белого и желтого налета<br>
-                        - Убирают неприятный запах<br>
-                        - Уберегают нагревательные элементы в бытовой технике<br>
-                        - Уменьшают расход моющих средств<br>
-                        - Экономят расход электроэнергии<br>
-                        - Избавляют от проблем жестких волос и сухой кожи
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 1299 грн
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="manufacture-solution">
-                  <div class="row">
-                    <div class="mechanic col-4">
-                      <p class="solution-header">
-                        Механические фильтры для очистки бытовой воды
-                      </p>
-                      <img src="css/img/mechanic.png" alt="механический фильтр">
-                      <p class="solution-text">
-                        - Устанавливаются на входе воды в квартиру<br>
-                        - Базовая очистка от песка, ила и ржавчины<br>
-                        - Защищают технику от попадания взвешенных частиц
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 300 грн
-                      </div>
-                    </div>
-                    <div class="osmosis col-4">
-                      <p class="solution-header">
-                        Фильтры обратного осмоса для очистки питьевой воды
-                      </p>
-                      <img src="css/img/osmosis.png" alt="фильтр обратного осмоса">
-                      <p class="solution-text">
-                        - Устанавливается на кухне с отдельным краном для чистой воды<br>
-                        - Удаляют бактерии и вирусы, пропуская только молекулы воды<br>
-                        - Избавляет от накипи в чайнике и и налете на посуде
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 2899 грн
-                      </div>
-                    </div>
-                    <div class="cabinet col-4">
-                      <p class="solution-header">
-                        Фильтры для комплексной очистки бытовой воды
-                      </p>
-                      <img src="css/img/column.png" alt="фильтр комплексной очистки воды">
-                      <p class="solution-text">
-                        - Избавляют от образования белого и желтого налета<br>
-                        - Убирают неприятный запах<br>
-                        - Уберегают нагревательные элементы в бытовой технике<br>
-                        - Уменьшают расход моющих средств<br>
-                        - Экономят расход электроэнергии<br>
-                        - Избавляют от проблем жестких волос и сухой кожи
-                      </p>
-                      <div class="pirce-tag">
-                        цена от 1299 грн
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- CallBack Pop-Up -->
-            <button type="button" class="btn blue-btn offset-3 col-6" data-toggle="modal" data-target="#callback">
-              заказать консультацию
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div class="water-test">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <h2>химический анализ воды</h2>
-                <p>Всё начинается с анализа воды. Чтобы составить рекомендации, нужно понять причины плохой воды.</p>
-
-                <!-- CallBack Pop-Up -->
-                <button type="button" class="btn blue-btn col-7" data-toggle="modal" data-target="#callback">
-                  заказать анализ
-                </button>
-              </div>
-              <div class="col-6">
-                <div class="pic-bg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div class="checking">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <div class="pic-bg">
-                  <img src="css/img/install.jpg" alt="выезд инженера на место эксплуатации">
-                </div>
-              </div>
-              <div class="col-6">
-                <h2>выезд инженера на место эксплуатации</h2>
-                <p>Чтобы понимать условия эксплуатации и места установки оборудования в каждом частном случае выезжает наш специалист.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div class="equipment">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <h2>подбор оборудования</h2>
-                <p>В зависимости от анализа воды потребуется то или иное оборудование.</p>
-
-                <!-- CallBack Pop-Up -->
-                <button type="button" class="btn blue-btn col-10" data-toggle="modal" data-target="#callback">
-                  заказать консультацию
-                </button>
-              </div>
-              <div class="col-6">
-                <div class="pic-bg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div class="assembling">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <div class="pic-bg">
-                  <img src="css/img/assembling.jpg" alt="установка и монтаж оборудования">
-                </div>
-              </div>
-              <div class="col-6">
-                <h2>установка и монтаж оборудования</h2>
-                <p>от качества монтажных работ зависит надежность всей системы. Мы справляемся с этим за 2 дня.</p>
-
-                <!-- CallBack Pop-Up -->
-                <button type="button" class="btn white-btn col-10" data-toggle="modal" data-target="#callback">
-                  заказать консультацию
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div class="completed-works">
-          <div class="container">
-            <h2>примеры выполненых работ</h2>
-            <div class="completed-tabs">
-              <input type="radio" id="tab-5" name="toggle-2" checked>
-              <label class="col-3" for="tab-5">квартира</label>
-              <input type="radio" id="tab-6" name="toggle-2">
-              <label class="col-3" for="tab-6">коттедж</label>
-              <input type="radio" id="tab-7" name="toggle-2">
-              <label class="col-3" for="tab-7">ресторан</label>
-              <input type="radio" id="tab-8" name="toggle-2">
-              <label class="col-3" for="tab-8">производство</label>
-              <div class="completed-tab-slides">
-                <div class="apartment-completed">
-                  <p>
-                    Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br>
-                    Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
-                  </p>
-                  <img src="css/img/manufacture-completed-1.jpg" alt="Kyiv">
-                </div>
-                <div class="cottage-completed">
-                  <p>
-                    Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br>
-                    Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
-                  </p>
-                  <img src="css/img/manufacture-completed-1.jpg" alt="Lviv">
-                </div>
-                <div class="restaurant-completed">
-                  <p>
-                    Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br>
-                    Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
-                  </p>
-                  <img src="css/img/manufacture-completed-1.jpg" alt="Lutsk">
-                </div>
-                <div class="manufacture-completed">
-                  <p>
-                    Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров<br>
-                    Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
-                  </p>
-                  <img src="css/img/manufacture-completed-1.jpg" alt="Krakow">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div class="service">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <h2>сервисное обслуживание</h2>
-                <p>Выезжаем 2 раза в год, доставляем расходные материалы, заменяем фильтрующую загрузку, проводим диагностику.</p>
-                <a href="javascript:showhide('serviceInDetails')">
-                  <button type="button" class="btn white-btn col-8">
-                      узнать подробнее
-                  </button>
-                </a>
-              </div>
-              <div class="col-6">
-                <div class="pic-bg"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="container">
-          <div class="col-12">
-            <div id="serviceInDetails">
-              <p>Content goes here.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div id="map"></div>
-        <div class="container">
-          <div class="row">
-            <div class="credits">
-              <div class="row">
-                <div class="col-4">
-                  <div class="contacts">
-                    <div class="row">
-                      <div class="col-6">
-                        <a href="tel:+38 (044) 111 22 33">(044) 111 22 33</a>
-                        <br><a href="tel:+38 (067) 444 55 66">(067) 444 55 66</a>
-                        <br><a href="mailto:info@filterpro.com.ua">info@filterpro.com.ua</a>
-                      </div>
-                      <div class="col-6">
-                        <p>
-                          Киев ул. Кириловская, 71
-                          <a class="navbar-brand" href="#">FILTERPRO</a>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-5 offset-3">
-                  <div class="ask">
-                    <div class="form-group row">
-                      <label for="clients-name" class="col-2 col-form-label"></label>
-                      <input class="form-control input" type="text" placeholder="Имя" id="clients-name">
-                    </div>
-                    <div class="form-group row">
-                      <label for="clients-tel" class="col-2 col-form-label"></label>
-                      <input class="form-control input" type="tel" placeholder="Телефон" id="clients-tel">
-                    </div>
-                    <div class="form-group row">
-                      <label for="clients-email" class="col-2 col-form-label"></label>
-                      <input class="form-control input" type="email" placeholder="E-mail" id="clients-email">
-                    </div>
-                    <div class="form-group row">
-                      <label for="client-message" class="col-2 col-form-label"></label>
-                      <textarea class="form-control textarea" placeholder="Задайте вопрос" id="clients-message" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="btn blue-btn col-12">заказать бесплатную консультацию</button>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-full">
-      <div class="row">
-        <div class="footer">
-          <div class="container">
-            <a class="navbar-brand pro-logo" href="#">FILTER <strong>PRO</strong></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CallBack Pop-Up -->
-    <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="callback">Заказать обратный звонок</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <!-- CallBack Pop-Up -->
+  <div class="modal fade" id="callback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="callback">Заказать обратный звонок</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group row">
-                <label for="name-input" class="col-3 col-form-label">Имя</label>
-                <div class="col-9">
-                  <input class="form-control" type="text" placeholder="Дядька Черномор" id="name-input">
-                </div>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <label for="name-input" class="col-3 col-form-label">Имя</label>
+              <div class="col-9">
+                <input class="form-control" type="text" placeholder="Дядька Черномор" id="name-input">
               </div>
-              <div class="form-group row">
-                <label for="tel-input" class="col-3 col-form-label">Телефон</label>
-                <div class="col-9">
-                  <input class="form-control" type="tel" placeholder="+380 50 123 45 67" id="tel-input">
-                </div>
+            </div>
+            <div class="form-group row">
+              <label for="tel-input" class="col-3 col-form-label">Телефон</label>
+              <div class="col-9">
+                <input class="form-control" type="tel" placeholder="+380 50 123 45 67" id="tel-input">
               </div>
-              <button type="submit" class="btn btn-primary flex-end">Подтвердить</button>
-              <button type="button" class="btn btn-secondary flex-end" data-dismiss="modal">Отменить</button>
-            </form>
-          </div>
+            </div>
+            <button type="submit" class="btn btn-primary flex-end">Подтвердить</button>
+            <button type="button" class="btn btn-secondary flex-end" data-dismiss="modal">Отменить</button>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-    <!-- Scripts -->
-    <script>
-      function showhide(id) {
-       	var e = document.getElementById(id);
-       	e.style.display = (e.style.display == 'block') ? 'none' : 'block';
-      }
-    </script>
-    <script>
-      function initMap() {
-        var myLatLng = {lat: 50.476487, lng: 30.485966};
+  <!-- Scripts -->
+  <script>
+    function showhide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+  </script>
+  <script>
+    function initMap() {
+      var myLatLng = {
+        lat: 50.476487,
+        lng: 30.485966
+      };
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: new google.maps.LatLng(50.472, 30.501),
-          gestureHandling: 'cooperative'
-        });
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: new google.maps.LatLng(50.472, 30.501),
+        gestureHandling: 'cooperative'
+      });
 
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'FILTERPRO'
-        });
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'FILTERPRO'
+      });
 
-        map.setOptions({
-          draggable: false,
-          zoomControl: false,
-          scrollwheel: false,
-          disableDoubleClickZoom: true
-        });
-      }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo2HmVnxTJ83Eny1QfziBB6fPkTm8KBQM&callback=initMap"></script>
-  </body>
+      map.setOptions({
+        draggable: false,
+        zoomControl: false,
+        scrollwheel: false,
+        disableDoubleClickZoom: true
+      });
+    }
+  </script>
+  <script src="js/smooth-scroll.js"></script>
+  <script>
+    smoothScroll.init();
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDo2HmVnxTJ83Eny1QfziBB6fPkTm8KBQM&callback=initMap"></script>
+</body>
+
 </html>

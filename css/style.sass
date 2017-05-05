@@ -3,6 +3,9 @@ $dark-text: #333
 $light-text: #888
 $blue: #5584b1
 
+body
+  padding: 0 !important
+
 .row
   margin: 0 !important
 
@@ -12,6 +15,8 @@ $blue: #5584b1
   overflow-y: scroll !important
 
 .modal-dialog
+  max-width: 600px !important
+  width: 600px !important
   margin: 250px auto !important
 
 .modal-content
@@ -102,8 +107,11 @@ $blue: #5584b1
   /*.info-text
     font-size: 1.5rem
     text-align: center
+#about, #solution, #services,
+#completed-works, #credits
+  margin-top: -100px
 
-.why-filtration
+.about
   width: 100%
   height: 700px
 
@@ -467,8 +475,23 @@ $blue: #5584b1
   height: 500px
 
   .contacts
+    display: flex
+    align-items: center
+    margin-top: 300px
     height: 150px
     background-color: #fff
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4)
+
+    .navbar-brand
+      font-size: 2rem
+      color: $blue
+
+    a
+      line-height: 2rem
+      color: $dark-text
+
+      &:hover
+        text-decoration: none
 
   .ask
     position: absolute
@@ -478,17 +501,20 @@ $blue: #5584b1
       border-radius: 0
       border: 2px solid $blue
       outline: none
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
 
     .textarea
       border-radius: 0
       border: 2px solid $blue
       outline: none
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
 
     .blue-btn
       margin-top: 40px
       height: 60px
       background: $blue
       border-radius: 0
+      border: 2px solid $blue
       font-family: $font
       font-size: 1.5rem
       font-weight: 300
@@ -497,14 +523,35 @@ $blue: #5584b1
       cursor: pointer
       transition: all .5s ease
       outline: none
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3)
 
       &:hover
         border: 2px solid $blue
         background: #fff
-        font-weight: 400
         color: $blue
 
 .footer
   width: 100%
-  height: 200px
+  height: 70px
   background-color: #f4f4f4
+
+  .copyright
+    margin-top: 20px
+    margin-bottom: 5px
+    display: flex
+    justify-content: center
+    font-size: .7rem
+    color: $light-text
+
+  .made-by
+    margin-bottom: 5px
+    display: flex
+    justify-content: center
+    font-size: .7rem
+    color: $light-text
+
+    i
+      display: inline-block
+      height: 15px
+      width: 15px
+      background: url(img/heart.png) no-repeat center
