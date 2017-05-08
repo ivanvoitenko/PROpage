@@ -22,6 +22,66 @@ body
 .modal-content
   border-radius: 0 !important
 
+  .modal-header
+    background-color: #ebf7fd
+    margin-bottom: 20px
+
+  .modal-body
+    .form-group
+      margin-bottom: 1rem !important
+
+      input
+        &:placeholder
+          font-style: italic
+          color: $light-text
+
+      .form-control
+            border-radius: 0
+
+    .blue-btn
+      margin-top: 20px
+      height: 40px
+      margin-left: 30%
+      width: 40%
+      background: $blue
+      border: 2px solid $blue
+      border-radius: 0
+      font-family: $font
+      font-size: 1rem
+      font-weight: 300
+      color: #fff
+      text-transform: uppercase
+      cursor: pointer
+      transition: all .5s ease
+      outline: none
+
+      &:hover
+        border: 2px solid $blue
+        background: #fff
+        color: $blue
+
+    .white-btn
+      margin-top: 20px
+      height: 40px
+      background: #fff
+      border: 2px solid $blue
+      border-radius: 0
+      font-family: $font
+      font-size: 1rem
+      font-weight: 300
+      color: $blue
+      text-transform: uppercase
+      cursor: pointer
+      transition: all .5s ease
+      outline: none
+
+      &:hover
+        border: 2px solid $blue
+        background: $blue
+        color: #fff
+
+// Main styles
+
 .header-menu
   background-color: #fff
   height: 100px
@@ -30,18 +90,26 @@ body
     font-size: 2.5rem
     color: #3b83bd !important
 
+  .navbar-collapse
+    justify-content: flex-end
+
+  .mr-auto
+    margin-right: 0px !important
+
   .nav-item
-    font-size: 1.5rem
+    font-size: 1.3rem
     font-weight: 300
     line-height: 80px
+    padding: 0 10px
 
   .blue-btn
     margin-top: 15px
     height: 50px
     background: $blue
+    border: 2px solid $blue
     border-radius: 0
     font-family: $font
-    font-size: 1.5rem
+    font-size: 1.3rem
     font-weight: 300
     color: #fff
     text-transform: uppercase
@@ -50,8 +118,7 @@ body
 
     &:hover
       border: 2px solid $blue
-      background: #ebf7fd
-      font-weight: 400
+      background: #fff
       color: $blue
 
 .main-bg
@@ -98,16 +165,10 @@ body
       font-size: 1rem
       margin-top: 40px
 
+#about
+  margin-top: -300px
 
-/*.info-bg
-  background-color: transparent
-  width: 100%
-  height: 200px
-
-  /*.info-text
-    font-size: 1.5rem
-    text-align: center
-#about, #solution, #services,
+#solution, #services,
 #completed-works, #credits
   margin-top: -100px
 
@@ -435,10 +496,34 @@ body
     height: 600px
     background: url(img/water-test.jpg) no-repeat center
 
+  h2
+    &:before
+      content: '1'
+      position: absolute
+      top: 82px
+      left: -50px
+      font-size: 6.6rem
+      font-weight: 700
+      color: $light-text
+      opacity: .2
+
 .checking
   .pic-bg
     img
       margin-left: -500px
+
+  h2
+    width: 110%
+
+    &:before
+      content: '2'
+      position: absolute
+      top: 82px
+      left: -50px
+      font-size: 6.6rem
+      font-weight: 700
+      color: #fff
+      opacity: .3
 
 .equipment
   .pic-bg
@@ -446,16 +531,51 @@ body
     height: 600px
     background: url(img/equipment.png) no-repeat center
 
+  h2
+    &:before
+      content: '3'
+      position: absolute
+      top: 82px
+      left: -50px
+      font-size: 6.6rem
+      font-weight: 700
+      color: $light-text
+      opacity: .2
+
 .assembling
   .pic-bg
     img
       margin-left: -500px
+
+  h2
+    width: 112%
+
+    &:before
+      content: '4'
+      position: absolute
+      top: 82px
+      left: -50px
+      font-size: 6.6rem
+      font-weight: 700
+      color: #fff
+      opacity: .3
 
 .service
   .pic-bg
     width: 48vw
     height: 600px
     background: url(img/service.jpg) no-repeat center
+
+  h2
+    &:before
+      content: '5'
+      position: absolute
+      top: 82px
+      left: -50px
+      font-size: 6.6rem
+      font-weight: 700
+      color: #fff
+      opacity: .3
 
 #serviceInDetails
   display: none
@@ -466,7 +586,8 @@ body
 
 #map
   width: 100%
-  height: 700px
+  height: 90vh
+  min-height: 700px
 
 .credits
   position: absolute
@@ -477,16 +598,20 @@ body
   .contacts
     display: flex
     align-items: center
+    margin-left: -15px
+    padding-top: 18px
     margin-top: 300px
     height: 150px
     background-color: #fff
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4)
 
     .navbar-brand
+      margin-top: 21px
       font-size: 2rem
       color: $blue
 
-    a
+    a, p
+      font-size: 1.3rem
       line-height: 2rem
       color: $dark-text
 
@@ -495,6 +620,7 @@ body
 
   .ask
     position: absolute
+    width: 88%
 
     .input
       height: 60px
@@ -551,6 +677,7 @@ body
     color: $light-text
 
     i
+      margin: 0 3px
       display: inline-block
       height: 15px
       width: 15px
