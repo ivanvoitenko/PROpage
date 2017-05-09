@@ -106,7 +106,7 @@
         <div class="container">
           <h1>решения очистки воды под ключ</h1>
           <div class="row">
-            <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#callback">
+            <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#calculate">
                 рассчитать стоимость
               </button>
           </div>
@@ -708,7 +708,7 @@
             <div class="form-group row">
               <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
               <div class="col-8">
-                <input class="form-control" type="text" placeholder="Дядька Черномор" id="name-input">
+                <input class="form-control" type="text" id="name-input">
               </div>
             </div>
             <div class="form-group row">
@@ -739,7 +739,7 @@
             <div class="form-group row">
               <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
               <div class="col-8">
-                <input class="form-control" type="text" placeholder="Дядька Черномор" id="name-input">
+                <input class="form-control" type="text" id="name-input">
               </div>
             </div>
             <div class="form-group row">
@@ -770,7 +770,7 @@
             <div class="form-group row">
               <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
               <div class="col-8">
-                <input class="form-control" type="text" placeholder="Дядька Черномор" id="name-input">
+                <input class="form-control" type="text" id="name-input">
               </div>
             </div>
             <div class="form-group row">
@@ -780,6 +780,107 @@
               </div>
             </div>
             <button type="submit" class="btn blue-btn flex-end">Заказать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Calculate Pop-Up -->
+  <div class="modal fade" id="calculate" tabindex="-1" role="dialog" aria-labelledby="calculation" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="calculate">Рассчет стоимости системы фильтрации</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <form class="form-inline">
+              <label class="mr-sm-2" for="whrereFiltration">Необходима фильтрация воды в </label>
+              <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="whrereFiltration">
+                <option value="ДОМЕ" selected>доме</option>
+                <option value="КВАРТИРЕ">квартире</option>
+              </select>
+            </form>
+            <form class="form-inline">
+              <label class="mr-sm-2" for="whatFiltration">Нужно очищать </label>
+              <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="whatFiltration">
+                <option value="ВСЮ ВОДУ" selected>всю воду</option>
+                <option value="ТОЛЬКО ПИТЬЕВУЮ ВОДУ">только питьевую воду</option>
+              </select>
+            </form>
+            <form class="form-inline">
+              <legend class="col-form-legend col-12">Что из перечисленного имеется в воде?</legend>
+              <div class="form-check form-check col-4">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="whiteCoating" value="Накипь и белый налет">
+                  Белый налет
+                </label>
+              </div>
+              <div class="form-check form-check col-4">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="yellowCoating" value="Желтый налет">
+                  Желтый налет
+                </label>
+              </div>
+              <div class="form-check form-check col-4">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="stink" value="Неприятный запах">
+                  Неприятный запах
+                </label>
+              </div>
+              <div class="form-check form-check col-4">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="sandy" value="Песок и ржавчина">
+                  Песок и ржавчина
+                </label>
+              </div>
+              <div class="form-check form-check col-4">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="smthElse" value="Другое">
+                  Другое
+                </label>
+              </div>
+              <div class="form-check form-check col-4">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" id="dontKnow" value="Незнаю">
+                  Даже незнаю
+                </label>
+              </div>
+            </form>
+            <form class="form-inline">
+              <label class="mr-sm-2" for="howManyFaucet">Вода используется из </label>
+              <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="howManyFaucet">
+                <option value="ОДНОГО САНУЗЛА" selected>одного санузла</option>
+                <option value="ДВУХ САНУЗЛОВ">двух санузлов</option>
+                <option value="ТРЕХ САНУЗЛОВ">трех санузлов</option>
+                <option value="ЧЕТЫРЕХ САНУЗЛОВ">четрырех санузлов</option>
+                <option value="МНОГИХ">многих санузлов</option>
+              </select>
+            </form>
+            <form class="form-inline">
+              <label class="mr-sm-2" for="file">Прикрипите, пожалуйста, результаты анализа воды, если вы его делали.</label>
+              <label class="custom-file">
+                <input type="file" id="file" class="custom-file-input">
+                <span class="custom-file-control"></span>
+              </label>
+            </form>
+            <div class="form-group row">
+              <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
+              <div class="col-8">
+                <input class="form-control" type="text" id="name-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="tel-input" class="col-2 offset-1 col-form-label">Телефон</label>
+              <div class="col-8">
+                <input class="form-control" type="tel" placeholder="380..." id="tel-input">
+              </div>
+            </div>
+            <button type="submit" class="btn blue-btn flex-end">Отправить для рассчета</button>
           </form>
         </div>
       </div>
