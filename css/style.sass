@@ -9,6 +9,102 @@ body
 .row
   margin: 0 !important
 
+// Slider styles
+.slider
+  position: relative
+
+.slider input[type=radio]
+  display: none
+
+.slider-inner
+  overflow: hidden !important
+
+.slider-slides
+  width: 500%
+  transition: transform 0.8s ease
+
+  img
+    float: left
+    width: 1110px !important
+    height: 625px
+
+.slider-controls
+  position: absolute
+  top: 30px
+  left: 46%
+  z-index: 99
+
+  label
+    float: left
+    width: 15px
+    height: 15px
+    margin: 0 15px
+    background-color: #ccc
+    border: 4px solid white
+    border-radius: 50%
+    transition: background-color 0.2s
+    cursor: pointer
+
+#btn-1 ~ .slider-controls label[for="btn-1"],
+#btn-2 ~ .slider-controls label[for="btn-2"],
+#btn-3 ~ .slider-controls label[for="btn-3"],
+#btn-4 ~ .slider-controls label[for="btn-4"],
+#btn-5 ~ .slider-controls label[for="btn-5"],
+#btn-6 ~ .slider-controls label[for="btn-6"],
+#btn-7 ~ .slider-controls label[for="btn-7"],
+#btn-8 ~ .slider-controls label[for="btn-8"],
+#btn-9 ~ .slider-controls label[for="btn-9"],
+#btn-10 ~ .slider-controls label[for="btn-10"],
+#btn-11 ~ .slider-controls label[for="btn-11"],
+#btn-12 ~ .slider-controls label[for="btn-12"],
+#btn-13 ~ .slider-controls label[for="btn-13"],
+#btn-14 ~ .slider-controls label[for="btn-14"],
+#btn-15 ~ .slider-controls label[for="btn-15"]
+  margin-left: -5px
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"],
+#btn-4:checked ~ .slider-controls label[for="btn-4"],
+#btn-5:checked ~ .slider-controls label[for="btn-5"],
+#btn-6:checked ~ .slider-controls label[for="btn-6"],
+#btn-7:checked ~ .slider-controls label[for="btn-7"],
+#btn-8:checked ~ .slider-controls label[for="btn-8"],
+#btn-9:checked ~ .slider-controls label[for="btn-9"],
+#btn-10:checked ~ .slider-controls label[for="btn-10"],
+#btn-11:checked ~ .slider-controls label[for="btn-11"],
+#btn-12:checked ~ .slider-controls label[for="btn-12"],
+#btn-13:checked ~ .slider-controls label[for="btn-13"],
+#btn-14:checked ~ .slider-controls label[for="btn-14"],
+#btn-15:checked ~ .slider-controls label[for="btn-15"]
+  background-color: #fff
+
+#btn-1:checked ~ .slider-inner .slider-slides,
+#btn-6:checked ~ .slider-inner .slider-slides,
+#btn-11:checked ~ .slider-inner .slider-slides
+  transform: translate(0)
+  transform: translate(0)
+
+#btn-2:checked ~ .slider-inner .slider-slides,
+#btn-7:checked ~ .slider-inner .slider-slides,
+#btn-12:checked ~ .slider-inner .slider-slides
+  transform: translate(-1110px)
+
+#btn-3:checked ~ .slider-inner .slider-slides,
+#btn-8:checked ~ .slider-inner .slider-slides,
+#btn-13:checked ~ .slider-inner .slider-slides
+  transform: translate(-2220px)
+
+#btn-4:checked ~ .slider-inner .slider-slides,
+#btn-9:checked ~ .slider-inner .slider-slides,
+#btn-14:checked ~ .slider-inner .slider-slides
+  transform: translate(-3330px)
+
+#btn-5:checked ~ .slider-inner .slider-slides,
+#btn-10:checked ~ .slider-inner .slider-slides,
+#btn-15:checked ~ .slider-inner .slider-slides
+  transform: translate(-4440px)
+
 // Pop-up styles
 
 .modal-open
@@ -345,7 +441,7 @@ body
 .completed-works
   background-color: #ebf7fd
   width: 100%
-  height: 1100px
+  height: 1000px
 
   h2
     margin-top: 50px
@@ -579,10 +675,28 @@ body
 
 #serviceInDetails
   display: none
-  background-color: #fff
+  background-color: #ebf7fd
   width: 100%
   height: 300px
   transition: all .5s ease
+
+  .drinking-water-header,
+  .inhouse-water-header
+    margin-top: 20px
+    margin-left: 30px
+    font-size: 1.7rem
+    font-weight: 400
+    color: $dark-text
+
+  .drinking-water-text,
+  .inhouse-water-text
+    margin-top: 30px
+    padding-left: 21px
+    width: 100%
+    height: 100px
+    font-size: .9rem
+    font-weight: 300
+    color: $dark-text
 
 #map
   width: 100%
