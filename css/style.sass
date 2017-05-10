@@ -113,13 +113,69 @@ body
 .modal-dialog
   max-width: 600px !important
   width: 600px !important
-  margin: 300px auto !important
+  margin: 15% auto 0 auto !important
 
 #calculate
   .modal-dialog
     max-width: 800px !important
     width: 800px !important
     margin: 150px auto 0 auto !important
+
+    .modal-body
+      .form-inline
+        margin-bottom: 30px
+
+        .custom-select
+          height: 2rem
+          border-radius: 0
+          color: $dark-text
+          cursor: pointer
+          outline: none
+
+        .checkbox-label
+          margin-bottom: 10px
+          padding-left: 0
+          justify-content: left
+
+        .custom-file-control
+          border-radius: 0
+          cursor: pointer
+
+          &:after
+            content: 'выбрать файл'
+            position: absolute
+            top: -1px
+            right: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 130px
+            height: 2.5rem
+            color: #fff
+            background: $blue
+
+        .form-check
+          input
+            display: none
+
+          input:checked ~ .form-check-label
+            border-color: $blue
+            background-color: #ebf7fd
+
+          .form-check-label
+            display: inline-block
+            margin-bottom: 10px
+            width: 80%
+            line-height: 40px
+            font-size: 1rem
+            text-align: center
+            color: #616161
+            border: 2px solid #f1f1f1
+            cursor: pointer
+            transition: all .3s ease
+
+            &:hover
+              border-color: $blue
 
 .modal-content
   border-radius: 0 !important
@@ -142,8 +198,9 @@ body
 
     .blue-btn
       margin-top: 20px
-      height: 40px
+      margin-bottom: 20px
       margin-left: 30%
+      height: 40px
       width: 40%
       background: $blue
       border: 2px solid $blue
@@ -161,26 +218,6 @@ body
         border: 2px solid $blue
         background: #fff
         color: $blue
-
-    .white-btn
-      margin-top: 20px
-      height: 40px
-      background: #fff
-      border: 2px solid $blue
-      border-radius: 0
-      font-family: $font
-      font-size: 1rem
-      font-weight: 300
-      color: $blue
-      text-transform: uppercase
-      cursor: pointer
-      transition: all .5s ease
-      outline: none
-
-      &:hover
-        border: 2px solid $blue
-        background: $blue
-        color: #fff
 
 // Main styles
 
@@ -226,12 +263,13 @@ body
 .main-bg
   margin-top: 100px
   width: 100%
-  height: 1100px
-  background: url(img/main-bg-4.jpg) no-repeat top center
+  height: calc(100vh - 100px)
+  max-height: 815px
+  background: url(img/main-bg-5.jpg) no-repeat bottom center
 
   h1
-    margin-top: 200px
-    margin-bottom: 100px
+    margin-top: 10%
+    margin-bottom: 10%
     text-transform: uppercase
     font-size: 3rem
     font-weight: 700
@@ -251,12 +289,12 @@ body
 
     &:hover
       border: 2px solid $blue
-      background: #ebf7fd
+      background: #fff
       font-weight: 400
       color: $blue
 
   .pro-badge
-    margin-top: 370px
+    margin-top: 10%
     display: flex
 
     .bold-digit
@@ -267,16 +305,13 @@ body
       font-size: 1rem
       margin-top: 40px
 
-#about
-  margin-top: -300px
-
-#solution, #services,
+#about, #solution, #services,
 #completed-works, #credits
   margin-top: -100px
 
 .about
   width: 100%
-  height: 700px
+  height: calc(100vh - 100px)
 
   h2
     margin-top: 50px
@@ -440,9 +475,13 @@ body
 
       .pirce-tag
         margin-top: 20px
-        padding-left: 31px
+        padding-left: 21px
         font-size: 1.5rem
         font-weight: 300
+
+        span
+          padding: 5px 20px
+          background: #fff
 
 .completed-works
   background-color: #ebf7fd
@@ -520,7 +559,7 @@ body
     img
       width: 100%
 
-.water-test, .equipment
+.water-test, .equipment, .service
   background-color: #fff
   width: 100%
   height: 600px
@@ -556,7 +595,7 @@ body
       font-weight: 400
       color: $blue
 
-.checking, .assembling, .service
+.checking, .assembling
   background-color: $blue
   width: 100%
   height: 600px
@@ -607,7 +646,7 @@ body
       font-size: 6.6rem
       font-weight: 700
       color: $light-text
-      opacity: .2
+      opacity: .5
 
 .checking
   .pic-bg
@@ -625,7 +664,7 @@ body
       font-size: 6.6rem
       font-weight: 700
       color: #fff
-      opacity: .3
+      opacity: .5
 
 .equipment
   .pic-bg
@@ -642,7 +681,7 @@ body
       font-size: 6.6rem
       font-weight: 700
       color: $light-text
-      opacity: .2
+      opacity: .5
 
 .assembling
   .pic-bg
@@ -660,7 +699,7 @@ body
       font-size: 6.6rem
       font-weight: 700
       color: #fff
-      opacity: .3
+      opacity: .5
 
 .service
   .pic-bg
@@ -676,12 +715,12 @@ body
       left: -50px
       font-size: 6.6rem
       font-weight: 700
-      color: #fff
-      opacity: .3
+      color: $light-text
+      opacity: .5
 
 #serviceInDetails
   display: none
-  background-color: #ebf7fd
+  background-color: #fff
   width: 100%
   height: 300px
   transition: all .5s ease
