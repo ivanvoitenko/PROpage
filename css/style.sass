@@ -25,13 +25,13 @@ body
 
   img
     float: left
-    width: 1110px !important
-    height: 625px
+    width: 20% !important
+    height: auto
 
 .slider-controls
   position: absolute
   top: 30px
-  left: 46%
+  left: 45%
   z-index: 99
 
   label
@@ -88,22 +88,22 @@ body
 #btn-2:checked ~ .slider-inner .slider-slides,
 #btn-7:checked ~ .slider-inner .slider-slides,
 #btn-12:checked ~ .slider-inner .slider-slides
-  transform: translate(-1110px)
+  transform: translate(-20%)
 
 #btn-3:checked ~ .slider-inner .slider-slides,
 #btn-8:checked ~ .slider-inner .slider-slides,
 #btn-13:checked ~ .slider-inner .slider-slides
-  transform: translate(-2220px)
+  transform: translate(-40%)
 
 #btn-4:checked ~ .slider-inner .slider-slides,
 #btn-9:checked ~ .slider-inner .slider-slides,
 #btn-14:checked ~ .slider-inner .slider-slides
-  transform: translate(-3330px)
+  transform: translate(-60%)
 
 #btn-5:checked ~ .slider-inner .slider-slides,
 #btn-10:checked ~ .slider-inner .slider-slides,
 #btn-15:checked ~ .slider-inner .slider-slides
-  transform: translate(-4440px)
+  transform: translate(-80%)
 
 // Pop-up styles
 
@@ -111,15 +111,15 @@ body
   overflow-y: scroll !important
 
 .modal-dialog
-  max-width: 600px !important
+  max-width: 100% !important
   width: 600px !important
   margin: 15% auto 0 auto !important
 
 #calculate
   .modal-dialog
-    max-width: 800px !important
+    max-width: 100% !important
     width: 800px !important
-    margin: 150px auto 0 auto !important
+    margin: 50px auto 0 auto !important
 
     .modal-body
       .form-inline
@@ -189,6 +189,9 @@ body
       margin-bottom: 1rem !important
 
       input
+        margin: 0 auto
+        max-width: 400px
+
         &:placeholder
           font-style: italic
           color: $light-text
@@ -221,9 +224,10 @@ body
 
 // Main styles
 
+
 .header-menu
   background-color: #fff
-  height: 100px
+  height: auto
 
   .pro-logo
     font-size: 2.5rem
@@ -240,6 +244,9 @@ body
     font-weight: 300
     line-height: 80px
     padding: 0 10px
+
+    &:last-child
+      padding-right: 0
 
   .blue-btn
     margin-top: 15px
@@ -263,8 +270,7 @@ body
 .main-bg
   margin-top: 100px
   width: 100%
-  height: calc(100vh - 100px)
-  max-height: 815px
+  height: auto
   background: url(img/main-bg-5.jpg) no-repeat bottom center
 
   h1
@@ -293,25 +299,32 @@ body
       font-weight: 400
       color: $blue
 
-  .pro-badge
-    margin-top: 10%
-    display: flex
+  .badge-container
+    .pro-badge
+      margin-top: 10%
+      display: flex
 
-    .bold-digit
-      font-size: 6rem
-      color: $blue
+      .bold-digit
+        color: $blue
 
-    .pro-badge-text
-      font-size: 1rem
-      margin-top: 40px
+        div
+          font-size: 6rem
 
-#about, #solution, #services,
+      .pro-badge-text
+        font-size: 1rem
+        margin-top: 40px
+
+#about
+  margin-top: -250px
+
+#solution, #services,
 #completed-works, #credits
   margin-top: -100px
 
 .about
   width: 100%
-  height: calc(100vh - 100px)
+  height: auto
+  margin-bottom: 300px
 
   h2
     margin-top: 50px
@@ -322,15 +335,13 @@ body
 
   .filtration-text
     margin-top: 50px
-    font-size: 1rem
+    font-size: 1.1rem
     font-weight: 300
-    text-align: center
-    color: $light-text
+    text-align: left
+    color: $dark-text
 
   .filtration-icon
     margin-top: 100px
-    float: left
-    width: 20%
     height: 100px
 
     .icon-header
@@ -345,30 +356,30 @@ body
     .icon-explain
       margin-top: 30px
       width: 100%
-      font-size: .7rem
+      font-size: .8rem
       font-weight: 300
       text-align: center
       color: $dark-text
 
-    &:nth-child(3)
+    &:first-child
       background: url(img/biohazard-min.png) no-repeat top center
 
-    &:nth-child(4)
+    &:nth-child(2)
       background: url(img/toxic-min.png) no-repeat top center
 
-    &:nth-child(5)
+    &:nth-child(3)
       background: url(img/bacteria-min.png) no-repeat top center
 
-    &:nth-child(6)
+    &:last-child
       background: url(img/magnet-min.png) no-repeat top center
 
-    &:last-child
+    /*&:last-child
       background: url(img/water-min.png) no-repeat top center
 
 .solution
   background-color: #ebf7fd
   width: 100%
-  height: 1050px
+  height: auto
 
   h2
     margin-top: 50px
@@ -379,6 +390,7 @@ body
     text-align: center
 
   .blue-btn
+    margin-bottom: 50px
     height: 60px
     background: $blue
     border-radius: 0
@@ -406,7 +418,6 @@ body
     display: none
 
   .solution-tabs label
-    display: inline-block
     margin-bottom: 30px
     margin-left: -5px
     line-height: 50px
@@ -427,15 +438,9 @@ body
     background: #ebf7fd
     color: $blue
 
-  #tab-1:checked ~ .solution-tab-slides .apartment-solution
-    display: block
-
-  #tab-2:checked ~ .solution-tab-slides .cottage-solution
-    display: block
-
-  #tab-3:checked ~ .solution-tab-slides .restaurant-solution
-    display: block
-
+  #tab-1:checked ~ .solution-tab-slides .apartment-solution,
+  #tab-2:checked ~ .solution-tab-slides .cottage-solution,
+  #tab-3:checked ~ .solution-tab-slides .restaurant-solution,
   #tab-4:checked ~ .solution-tab-slides .manufacture-solution
     display: block
 
@@ -473,6 +478,15 @@ body
         font-weight: 300
         color: $dark-text
 
+      .solution-text-adapt
+        margin-top: 30px
+        width: 100%
+        height: 100px
+        text-align: center
+        font-size: 1.1rem
+        font-weight: 300
+        color: $dark-text
+
       .pirce-tag
         margin-top: 20px
         padding-left: 21px
@@ -486,7 +500,7 @@ body
 .completed-works
   background-color: #ebf7fd
   width: 100%
-  height: 1000px
+  height: auto
 
   h2
     margin-top: 50px
@@ -558,6 +572,42 @@ body
 
     img
       width: 100%
+
+.warranty
+  width: 100%
+  height: auto
+  background: #fff
+
+  h2
+    margin-top: 50px
+    text-transform: uppercase
+    color: $dark-text
+    font-size: 2.5rem
+    font-weight: 700
+    text-align: center
+
+  .warranty-container
+    margin: 100px 0
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .warranty-icon-text
+      margin-top: 25px
+      font-size: 1.3rem
+
+    .warranty-icon-handshake
+      height: 150px
+      background: url(img/handshake.png) no-repeat center
+
+    .warranty-icon-clean-water
+      height: 150px
+      background: url(img/clean-water.png) no-repeat center
+
+    .warranty-icon-umbrella
+      height: 150px
+      background: url(img/umbrella.png) no-repeat center
 
 .water-test, .equipment, .service
   background-color: #fff
@@ -760,7 +810,7 @@ body
     margin-left: -15px
     padding-top: 18px
     margin-top: 300px
-    height: 150px
+    height: auto
     background-color: #fff
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.4)
 

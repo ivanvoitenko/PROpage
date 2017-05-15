@@ -14,13 +14,14 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/tablet.min.css">
+  <link rel="stylesheet" href="css/mobile.min.css">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <title>FILTERPRO | профессиональная очистка воды</title>
 
@@ -65,13 +66,13 @@
 
 <body>
 
-  <nav class="navbar fixed-top navbar-toggleable-md navbar-light justify-content-end header-menu">
+  <nav class="navbar fixed-top navbar-toggleable-lg navbar-light justify-content-end header-menu">
     <div class="container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       <a class="navbar-brand pro-logo" data-scroll href="#">FILTER <strong>PRO</strong></a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" data-scroll href="#about">О нас</a>
@@ -92,8 +93,8 @@
           <!-- CallBack Pop-Up -->
           <li class="nav-item">
             <button type="button" class="btn blue-btn" data-toggle="modal" data-target="#callback">
-                Заказать звонок
-              </button>
+              Заказать звонок
+            </button>
           </li>
         </ul>
       </div>
@@ -106,28 +107,54 @@
         <div class="container">
           <h1>решения очистки воды под ключ</h1>
           <div class="row">
-            <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#calculate">
-                рассчитать стоимость
-              </button>
+            <button type="button" class="btn big-blue-btn col-12 col-md-8 col-lg-5" data-toggle="modal" data-target="#calculate">
+              рассчитать стоимость
+            </button>
           </div>
           <div class="row">
             <!-- CallBack Pop-Up -->
-            <button type="button" class="btn big-blue-btn col-5" data-toggle="modal" data-target="#consultation">
-                получить консультацию
-              </button>
+            <button type="button" class="btn big-blue-btn col-12 col-md-8 col-lg-5" data-toggle="modal" data-target="#consultation">
+              получить консультацию
+            </button>
           </div>
-          <div class="row">
-            <div class="pro-badge col-3 offset-1">
-              <span class="bold-digit col-3">8</span>
-              <div class="pro-badge-text col-9">лет профессионального опыта</div>
-            </div>
-            <div class="pro-badge col-4">
-              <span class="bold-digit col-4">30</span>
-              <div class="pro-badge-text col-8">сертифицированных инженеров и консультантов в штате</div>
-            </div>
-            <div class="pro-badge col-4">
-              <span class="bold-digit col-8">3500</span>
-              <div class="pro-badge-text col-4">успешных завершенных проектов</div>
+          <div class="badge-container">
+            <div class="row">
+              <div class="pro-badge col-12 col-md-4 col-xl-3 offset-xl-1">
+                <div class="row">
+                  <div class="bold-digit col-12 col-lg-3">
+                    <div>8</div>
+                  </div>
+                  <div class="pro-badge-text col-md-12 col-lg-9">
+                    <div>
+                      лет профессионального опыта
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro-badge col-12 col-md-4">
+                <div class="row">
+                  <div class="bold-digit col-12 col-lg-4">
+                    <div>30</div>
+                  </div>
+                  <div class="pro-badge-text col-12 col-lg-8">
+                    <div>
+                      сертифицированных инженеров и консультантов в штате
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pro-badge col-12 col-md-4">
+                <div class="row">
+                  <div class="bold-digit col-12 col-lg-8">
+                    <div>3500</div>
+                  </div>
+                  <div class="pro-badge-text col-12 col-lg-4">
+                    <div>
+                      успешных завершенных проектов
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -139,40 +166,44 @@
     <div class="row">
       <div id="about"></div>
       <div class="about">
-        <h2>зачем очищать воду?</h2>
+        <h2>чем мы занимаемся?</h2>
         <p class="filtration-text">
-          Даже в самой чистой родниковой воде могут содержаться как химические так и органические примеси. В нашей стране имели место быть техногенные катастрофы, последствия индустриализации, расцвет тяжелой промышленности и металлургии также оставили след в почве.
+          Даже в самой чистой родниковой воде могут содержаться как химические так и органические примеси.
+          В нашей стране имели место быть техногенные катастрофы, последствия индустриализации, расцвет тяжелой промышленности и металлургии также оставили след в почве.
           В результате вода, которая подается в наш дом, непригодная для использования в быту и даже может навредить нашему здоровью.
+          Именно потому очистка воды столь важна. Мы занимаемся системами фильтрации более 8 лет, провели тысячи установок от фильтров проточного типа в квартирах до профессионального оборудования в котельнях и промышленности.
         </p>
-        <div class="filtration-icon">
-          <div class="icon-header">зараженная<br>почва</div>
-          <div class="icon-explain">
-            - снижение иммунитета<br> - раковые заболевания<br> - тяжелые отравления
+        <div class="row">
+          <div class="filtration-icon col-12 col-md-6 col-lg-3">
+            <div class="icon-header">зараженная<br>почва</div>
+            <div class="icon-explain">
+              - снижение иммунитета<br> - раковые заболевания<br> - тяжелые отравления
+            </div>
           </div>
-        </div>
-        <div class="filtration-icon">
-          <div class="icon-header">остатки солей<br>тяжелых металлов</div>
-          <div class="icon-explain">
-            - попадание в организм токсинов<br> - накопление тяжелых металлов в организме<br> - нарушение работы нервной системы
+          <div class="filtration-icon col-12 col-md-6 col-lg-3">
+            <div class="icon-header">остатки солей<br>тяжелых металлов</div>
+            <div class="icon-explain">
+              - попадание в организм токсинов<br> - накопление тяжелых металлов<br> - нарушение работы нервной системы
+            </div>
           </div>
-        </div>
-        <div class="filtration-icon">
-          <div class="icon-header">органические<br>примеси</div>
-          <div class="icon-explain">
-            - слизь в трубах<br> - кишечные расстройства<br> - неприятный цвет и запах воды
+          <div class="filtration-icon col-12 col-md-6 col-lg-3">
+            <div class="icon-header">органические<br>примеси</div>
+            <div class="icon-explain">
+              - слизь в трубах<br> - кишечные расстройства<br> - неприятный запах воды
+            </div>
           </div>
-        </div>
-        <div class="filtration-icon">
-          <div class="icon-header">избыток<br>железа</div>
-          <div class="icon-explain">
-            - желтые потеки<br> - непригодность воды для питья<br> - ржавчина на сантехнике
+          <div class="filtration-icon col-12 col-md-6 col-lg-3">
+            <div class="icon-header">избыток<br>железа</div>
+            <div class="icon-explain">
+              - желтые потеки<br> - непригодность воды для питья<br> - ржавчина на сантехнике
+            </div>
           </div>
-        </div>
-        <div class="filtration-icon">
-          <div class="icon-header">чрезмерное количество<br>солей жесткости</div>
-          <div class="icon-explain">
-            - снижение иммунитета<br> - раковые заболевания<br> - тяжелые отравления
-          </div>
+          <!--<div class="filtration-icon col-lg-3">
+            <div class="icon-header">чрезмерное количество<br>солей жесткости</div>
+            <div class="icon-explain">
+              - снижение иммунитета<br> - раковые заболевания<br> - тяжелые отравления
+            </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -186,17 +217,17 @@
           <h2>решения очистки воды</h2>
           <div class="solution-tabs">
             <input type="radio" id="tab-1" name="toggle-1" checked>
-            <label class="col-3" for="tab-1">квартира</label>
+            <label class="col-12 col-md-3" for="tab-1">квартира</label>
             <input type="radio" id="tab-2" name="toggle-1">
-            <label class="col-3" for="tab-2">коттедж</label>
+            <label class="col-12 col-md-3" for="tab-2">коттедж</label>
             <input type="radio" id="tab-3" name="toggle-1">
-            <label class="col-3" for="tab-3">ресторан</label>
+            <label class="col-12 col-md-3" for="tab-3">ресторан</label>
             <input type="radio" id="tab-4" name="toggle-1">
-            <label class="col-3" for="tab-4">производство</label>
+            <label class="col-12 col-md-3" for="tab-4">производство</label>
             <div class="solution-tab-slides">
               <div class="apartment-solution">
                 <div class="row">
-                  <div class="mechanic col-4">
+                  <div class="mechanic col-12 col-md-4">
                     <p class="solution-header">
                       Механические фильтры для очистки бытовой воды
                     </p>
@@ -210,7 +241,7 @@
                       <span>от 299 грн</span>
                     </div>
                   </div>
-                  <div class="osmosis col-4">
+                  <div class="osmosis col-12 col-md-4">
                     <p class="solution-header">
                       Фильтры обратного осмоса для очистки питьевой воды
                     </p>
@@ -224,7 +255,7 @@
                       <span>от 2 899 грн</span>
                     </div>
                   </div>
-                  <div class="cabinet col-4">
+                  <div class="cabinet col-12 col-md-4">
                     <p class="solution-header">
                       Фильтры для комплексной очистки бытовой воды
                     </p>
@@ -245,7 +276,7 @@
               </div>
               <div class="cottage-solution">
                 <div class="row">
-                  <div class="mechanic col-4">
+                  <div class="mechanic col-12 col-md-4">
                     <p class="solution-header">
                       Механические фильтры для очистки бытовой воды
                     </p>
@@ -259,7 +290,7 @@
                       <span>от 299 грн</span>
                     </div>
                   </div>
-                  <div class="osmosis col-4">
+                  <div class="osmosis col-12 col-md-4">
                     <p class="solution-header">
                       Фильтры обратного осмоса для очистки питьевой воды
                     </p>
@@ -273,7 +304,7 @@
                       <span>от 2 899 грн</span>
                     </div>
                   </div>
-                  <div class="cabinet col-4">
+                  <div class="cabinet col-12 col-md-4">
                     <p class="solution-header">
                       Фильтры для комплексной очистки бытовой воды
                     </p>
@@ -294,7 +325,7 @@
               </div>
               <div class="restaurant-solution">
                 <div class="row">
-                  <div class="mechanic col-6">
+                  <div class="mechanic col-12 col-md-6">
                     <p class="solution-header">
                       Системы нанофильтрации
                     </p>
@@ -310,7 +341,7 @@
                       <span>от 4 999 грн</span>
                     </div>
                   </div>
-                  <div class="cabinet col-6">
+                  <div class="cabinet col-12 col-md-6">
                     <p class="solution-header">
                       Проточные фильтры обратного осмоса
                     </p>
@@ -334,10 +365,10 @@
                     <p class="solution-header">
                       Подготовка воды под разные цели и задачи
                     </p>
-                    <img src="css/img/commercial.png" alt="механический фильтр">
-                    <p class="solution-text" style="padding-left: 300px">
-                      - Индивидуальный подход к каждому проекту, учитывая все технические требования и стандарты.<br>
-                      - Проектирование, установка и сервисное обслуживание.<br>
+                    <img class="manufacture-img" src="css/img/commercial.png" alt="механический фильтр">
+                    <p class="solution-text-adapt">
+                      - Индивидуальный подход к каждому проекту, учитывая все технические требования и стандарты<br>
+                      - Проектирование, установка и сервисное обслуживание
                     </p>
                   </div>
                 </div>
@@ -346,8 +377,8 @@
           </div>
 
           <!-- Consultation Pop-Up -->
-          <button type="button" class="btn blue-btn offset-3 col-6" data-toggle="modal" data-target="#consultation">
-              заказать консультацию
+          <button type="button" class="btn blue-btn col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3" data-toggle="modal" data-target="#consultation">
+            заказать бесплатную консультацию
           </button>
         </div>
       </div>
@@ -360,16 +391,16 @@
       <div class="water-test">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <h2>химический анализ воды</h2>
               <p>Всё начинается с анализа воды. Чтобы составить рекомендации, нужно понять причины плохой воды.</p>
 
               <!-- Water test Pop-Up -->
-              <button type="button" class="btn blue-btn col-10" data-toggle="modal" data-target="#watertest">
-                  заказать анализ
-                </button>
+              <button type="button" class="btn blue-btn col-12 col-md-10" data-toggle="modal" data-target="#watertest">
+                заказать анализ
+              </button>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <div class="pic-bg"></div>
             </div>
           </div>
@@ -383,14 +414,19 @@
       <div class="checking">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <div class="pic-bg">
                 <img src="css/img/install.jpg" alt="выезд инженера на место эксплуатации">
               </div>
             </div>
-            <div class="col-5 offset-1">
+            <div class="col-12 col-md-5 offset-md-1">
               <h2>выезд инженера на место эксплуатации</h2>
               <p>Чтобы понимать условия эксплуатации и места установки оборудования в каждом частном случае выезжает наш специалист.</p>
+
+              <!-- Consultation Pop-Up -->
+              <button type="button" class="btn white-btn col-12" data-toggle="modal" data-target="#consultation">
+                заказать выезд
+              </button>
             </div>
           </div>
         </div>
@@ -403,16 +439,16 @@
       <div class="equipment">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <h2>подбор оборудования</h2>
               <p>В зависимости от анализа воды потребуется то или иное оборудование.</p>
 
               <!-- Consultation Pop-Up -->
-              <button type="button" class="btn blue-btn col-10" data-toggle="modal" data-target="#consultation">
-                  сделать подбор
-                </button>
+              <button type="button" class="btn blue-btn col-12 col-md-10" data-toggle="modal" data-target="#consultation">
+                сделать подбор
+              </button>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <div class="pic-bg"></div>
             </div>
           </div>
@@ -426,19 +462,19 @@
       <div class="assembling">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <div class="pic-bg">
                 <img src="css/img/assembling.jpg" alt="установка и монтаж оборудования">
               </div>
             </div>
-            <div class="col-5 offset-1">
+            <div class="col-12 col-md-5 offset-md-1">
               <h2>установка и монтаж оборудования</h2>
-              <p>от качества монтажных работ зависит надежность всей системы. Мы справляемся с этим за 2 дня.</p>
+              <p>От качества монтажных работ зависит надежность всей системы. Мы справляемся с этим за 2 дня.</p>
 
               <!-- Consultation Pop-Up -->
-              <button type="button" class="btn white-btn col-10" data-toggle="modal" data-target="#consultation">
-                  заказать монтаж
-                </button>
+              <button type="button" class="btn white-btn col-12 col-lg-10" data-toggle="modal" data-target="#consultation">
+                заказать монтаж
+              </button>
             </div>
           </div>
         </div>
@@ -451,16 +487,16 @@
       <div class="service">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <h2>сервисное обслуживание</h2>
               <p>Выезжаем 2 раза в год, доставляем расходные материалы, заменяем фильтрующую загрузку, проводим диагностику.</p>
               <a href="javascript:showhide('serviceInDetails')">
-                <button type="button" class="btn blue-btn col-10">
-                      подробнее о сервисе
-                  </button>
+                <button type="button" class="btn blue-btn col-12 col-lg-10">
+                  подробнее о сервисе
+                </button>
               </a>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
               <div class="pic-bg"></div>
             </div>
           </div>
@@ -472,7 +508,7 @@
         <div id="serviceInDetails">
           <div class="container">
             <div class="row">
-              <div class="drinking-water col-6">
+              <div class="drinking-water col-12 col-md-6">
                 <p class="drinking-water-header">
                   Питьевая вода
                 </p>
@@ -487,7 +523,7 @@
                   - Дезинфекция накопительной емкости
                 </p>
               </div>
-              <div class="inhouse-water col-6">
+              <div class="inhouse-water col-12 col-md-6">
                 <p class="inhouse-water-header">
                   Бытовая вода
                 </p>
@@ -516,13 +552,13 @@
           <h2>примеры выполненых работ</h2>
           <div class="completed-tabs">
             <input type="radio" id="tab-5" name="toggle-2" checked>
-            <label class="col-3" for="tab-5">квартира</label>
+            <label class="col-12 col-md-3" for="tab-5">квартира</label>
             <input type="radio" id="tab-6" name="toggle-2">
-            <label class="col-3" for="tab-6">коттедж</label>
+            <label class="col-12 col-md-3" for="tab-6">коттедж</label>
             <input type="radio" id="tab-7" name="toggle-2">
-            <label class="col-3" for="tab-7">ресторан</label>
+            <label class="col-12 col-md-3" for="tab-7">ресторан</label>
             <input type="radio" id="tab-8" name="toggle-2">
-            <label class="col-3" for="tab-8">производство</label>
+            <label class="col-12 col-md-3" for="tab-8">производство</label>
             <div class="completed-tab-slides">
               <div class="apartment-completed">
                 <p>
@@ -554,7 +590,8 @@
               </div>
               <div class="cottage-completed">
                 <p>
-                  Для загородных домов и коттеджей предусмотренны фильтры колонного типа.<br>Такие фильтры устанавливаются для очистки воды со скважин.
+                  Для загородных домов и коттеджей предусмотренны фильтры колонного типа.
+                  Такие фильтры устанавливаются для очистки воды со скважин.
                 </p>
                 <div class="slider">
                   <input type="radio" id="btn-6" name="toggle" checked>
@@ -582,7 +619,8 @@
               </div>
               <div class="restaurant-completed">
                 <p>
-                  Кафе и рестораныимеют большую потребность в воде для приготовления пищи и для технических нужд.<br>Для фильтрации больших объёмов воды используются установки повышенной производительности.
+                  Кафе и рестораныимеют большую потребность в воде для приготовления пищи и для технических нужд.
+                  Для фильтрации больших объёмов воды используются установки повышенной производительности.
                 </p>
                 <div class="slider">
                   <input type="radio" id="btn-11" name="toggle" checked>
@@ -610,7 +648,8 @@
               </div>
               <div class="manufacture-completed">
                 <p>
-                  Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров.<br>г. Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
+                  Система комплексной очистки воды для пивоварения с суточным объёмом свыше 1000 литров.
+                  г. Киев, ул. Ревуцкого, 15, пивоварня “КУЛЬТ”
                 </p>
                 <img src="css/img/manufacture-completed-1.jpg" alt="система фильтрации для промышленного пивоварения">
               </div>
@@ -623,21 +662,52 @@
 
   <div class="container-full">
     <div class="row">
+      <div id="warranty"></div>
+      <div class="warranty">
+        <div class="container">
+          <h2>наши гарантии</h2>
+          <div class="row">
+            <div class="warranty-container col-12 col-md-4">
+              <div class="row">
+                <div class="warranty-icon-handshake col-12 col-lg-6"></div>
+                <div class="warranty-icon-text col-12 col-lg-6">Заключаем с вами договор</div>
+              </div>
+            </div>
+            <div class="warranty-container col-12 col-md-4">
+              <div class="row">
+                <div class="warranty-icon-clean-water col-12 col-xl-6"></div>
+                <div class="warranty-icon-text col-12 col-xl-6">Гарантируем качество воды</div>
+              </div>
+            </div>
+            <div class="warranty-container col-12 col-md-4">
+              <div class="row">
+                <div class="warranty-icon-umbrella col-12 col-xl-6"></div>
+                <div class="warranty-icon-text col-12 col-xl-6">Гарантия на работы до 5 лет</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-full crdt">
+    <div class="row">
       <div id="credits"></div>
       <div id="map"></div>
       <div class="container">
         <div class="row">
           <div class="credits">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="contacts">
                   <div class="row">
-                    <div class="col-5">
-                      <a href="tel:+38 (044) 111 22 33">(044) 111 22 33</a>
-                      <br><a href="tel:+38 (067) 444 55 66">(067) 444 55 66</a>
+                    <div class="col-12 col-lg-5">
+                      <a href="tel:+380988033968">(098) 803 39 68</a>
+                      <!--<br><a href="tel:+38 (067) 444 55 66">(067) 444 55 66</a>-->
                       <a href="mailto:info@filterpro.com.ua">info@filterpro.com.ua</a>
                     </div>
-                    <div class="col-6 offset-1">
+                    <div class="col-12 col-xl-6 offset-xl-1">
                       <p>
                         Киев ул. Кириловская, 71
                         <br><a class="navbar-brand" href="#">FILTER <strong>PRO</strong></a>
@@ -646,7 +716,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-5 offset-1">
+              <div class="col-12 col-md-6 col-xl-5 offset-xl-1">
                 <div class="ask">
                   <div class="form-group row">
                     <label for="clients-name" class="col-2 col-form-label"></label>
@@ -706,18 +776,18 @@
         <div class="modal-body">
           <form>
             <div class="form-group row">
-              <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
-              <div class="col-8">
-                <input class="form-control" type="text" id="name-input">
+              <label for="name-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="text" placeholder="Имя" id="name-input">
               </div>
             </div>
             <div class="form-group row">
-              <label for="tel-input" class="col-2 offset-1 col-form-label">Телефон</label>
-              <div class="col-8">
-                <input class="form-control" type="tel" placeholder="380..." id="tel-input">
+              <label for="tel-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="tel" placeholder="38 0XX XXX-XX-XX" id="tel-input">
               </div>
             </div>
-            <button type="submit" class="btn blue-btn flex-end">Заказать</button>
+            <button type="submit" class="btn blue-btn flex-end col-sm-12">Заказать</button>
           </form>
         </div>
       </div>
@@ -729,7 +799,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="consultation">Заказать консультацию</h5>
+          <h5 class="modal-title" id="consultation">Оставьте свой номер, чтобы мы могли с вами связаться</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
           </button>
@@ -737,15 +807,15 @@
         <div class="modal-body">
           <form>
             <div class="form-group row">
-              <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
-              <div class="col-8">
-                <input class="form-control" type="text" id="name-input">
+              <label for="name-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="text" placeholder="Имя" id="name-input">
               </div>
             </div>
             <div class="form-group row">
-              <label for="tel-input" class="col-2 offset-1 col-form-label">Телефон</label>
-              <div class="col-8">
-                <input class="form-control" type="tel" placeholder="380..." id="tel-input">
+              <label for="tel-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="tel" placeholder="38 0XX XXX-XX-XX" id="tel-input">
               </div>
             </div>
             <button type="submit" class="btn blue-btn flex-end">Заказать</button>
@@ -768,15 +838,15 @@
         <div class="modal-body">
           <form>
             <div class="form-group row">
-              <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
-              <div class="col-8">
-                <input class="form-control" type="text" id="name-input">
+              <label for="name-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="text" placeholder="Имя" id="name-input">
               </div>
             </div>
             <div class="form-group row">
-              <label for="tel-input" class="col-2 offset-1 col-form-label">Телефон</label>
-              <div class="col-8">
-                <input class="form-control" type="tel" placeholder="380..." id="tel-input">
+              <label for="tel-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="tel" placeholder="38 0XX XXX-XX-XX" id="tel-input">
               </div>
             </div>
             <button type="submit" class="btn blue-btn flex-end">Заказать</button>
@@ -803,7 +873,7 @@
                 <option value="ДОМЕ" selected>доме</option>
                 <option value="КВАРТИРЕ">квартире</option>
               </select>
-              <label class="mr-sm-2" for="whatFiltration">&nbsp;&nbsp;и очищать нужно&nbsp;&nbsp;</label>
+              <label class="mr-sm-2" for="whatFiltration">и очищать нужно&nbsp;&nbsp;</label>
               <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="whatFiltration">
                 <option value="ВСЮ ВОДУ" selected>всю воду</option>
                 <option value="ТОЛЬКО ПИТЬЕВУЮ ВОДУ">только питьевую воду</option>
@@ -811,27 +881,27 @@
             </form>
             <form class="form-inline">
               <label class="checkbox-label col-12">Что из перечисленного имеется в воде?</label>
-              <div class="form-check form-check col-4">
+              <div class="form-check col-12 col-md-4">
                 <input class="form-check-input" type="checkbox" id="whiteCoating" value="Накипь и белый налет">
                 <label class="form-check-label" for="whiteCoating">Белый налет</label>
               </div>
-              <div class="form-check form-check col-4">
+              <div class="form-check col-12 col-md-4">
                 <input class="form-check-input" type="checkbox" id="yellowCoating" value="Желтый налет">
                 <label class="form-check-label" for="yellowCoating">Желтый налет</label>
               </div>
-              <div class="form-check form-check col-4">
+              <div class="form-check col-12 col-md-4">
                 <input class="form-check-input" type="checkbox" id="stink" value="Неприятный запах">
                 <label class="form-check-label" for="stink">Неприятный запах</label>
               </div>
-              <div class="form-check form-check col-4">
+              <div class="form-check col-12 col-md-4">
                 <input class="form-check-input" type="checkbox" id="sandy" value="Песок и ржавчина">
                 <label class="form-check-label" for="sandy">Песок и ржавчина</label>
               </div>
-              <div class="form-check form-check col-4">
+              <div class="form-check col-12 col-md-4">
                 <input class="form-check-input" type="checkbox" id="smthElse" value="Другое">
                 <label class="form-check-label" for="smthElse">Другое</label>
               </div>
-              <div class="form-check form-check col-4">
+              <div class="form-check col-12 col-md-4">
                 <input class="form-check-input" type="checkbox" id="dontKnow" value="Незнаю">
                 <label class="form-check-label" for="dontKnow">Даже незнаю</label>
               </div>
@@ -854,15 +924,15 @@
               </label>
             </form>
             <div class="form-group row">
-              <label for="name-input" class="col-2 offset-1 col-form-label">Имя</label>
-              <div class="col-8">
-                <input class="form-control" type="text" id="name-input">
+              <label for="name-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="text" placeholder="Имя" id="name-input">
               </div>
             </div>
             <div class="form-group row">
-              <label for="tel-input" class="col-2 offset-1 col-form-label">Телефон</label>
-              <div class="col-8">
-                <input class="form-control" type="tel" placeholder="380..." id="tel-input">
+              <label for="tel-input"></label>
+              <div class="col-12">
+                <input class="form-control" type="tel" placeholder="38 0XX XXX-XX-XX" id="tel-input">
               </div>
             </div>
             <button type="submit" class="btn blue-btn flex-end">Отправить для рассчета</button>
@@ -877,6 +947,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
   <!-- Scripts -->
+  <script>
+    $('.nav-link').on('click', function() {
+      $('.navbar-toggler').trigger('click');
+    });
+  </script>
   <script>
     function showhide(id) {
       var e = document.getElementById(id);
